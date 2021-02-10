@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=initial-scale=1.0, maximum-scale=1.0, user-scaleable=1, width=device-width>
+
+    <title>Perfume</title>
+
+    <link rel="stylesheet" type="text/css" href="finalone.css">
+
+    <style>
+     body {
+            background-color: black;
+            font-family: Times New Roman;
+            height: 80vh;
+          }
+
+    #rollerball {
+      position: absolute;
+      color: black;
+      left: 255px;
+      top:220px;
+      font-size: 30px;
+      font-family: Times New Roman;
+      color: transparent;
+      z-index: 7;
+      text-shadow: 1px 1px 1.7px black;
+    }
+
+    #rollerball:hover{
+      font-size: 30px;
+      left: 255px;
+      top: 220px;
+      color: white;
+      text-shadow: 1px 1px 2px white;
+      opacity:0.7;
+    }
+
+    #wave{
+      position: absolute;
+      top: 0px;
+      left:120px;
+      width: 470px;
+      height: 1020px;
+      opacity: 0.05;
+      z-index: 6;
+    }
+
+    #wave:hover{
+      opacity: 0.2;
+    }
+
+    #liquid {
+      position: absolute;
+      color: black;
+      left: 700px;
+      top:480px;
+      font-size: 30px;
+      color: transparent;
+      font-family: Times New Roman;
+      text-shadow: 1px 1px 1.7px black;
+      z-index: 6;
+    }
+
+    #liquid:hover {
+      font-size: 30px;
+      left: 720px;
+      top: 460px;
+      color: white;
+      text-shadow: 0px 0px 8px white;
+      opacity:0.7;
+    }
+
+    #circle{
+      position: absolute;
+      top: 200px;
+      left:730px;
+      width: 250px;
+      opacity: 0.3;
+      height: 250px;
+      z-index: 6;
+    }
+
+    #circle:hover{
+      opacity: 0.7;
+    }
+
+    #solid {
+      position: absolute;
+      color: black;
+      right: 350px;
+      top:200px;
+      font-size: 30px;
+      font-family: Times New Roman;
+      color: transparent;
+      text-shadow: 1px 1px 1.7px black;
+      z-index: 6;
+    }
+
+    #solid:hover{
+      font-size: 30px;
+      right: 350px;
+      top: 200px;
+      color: white;
+      text-shadow: 0px 0px 8px white;
+      opacity:0.7;
+    }
+
+    .rec {
+      position: absolute;
+      top: 240px;
+      right: 0px;
+      height: 350px;
+      width: 450px;
+      background-color: transparent;
+      border: 2px solid black;
+      opacity: 0.2;
+      z-index: 6;
+
+    }
+    .rec:hover{
+      opacity: 0.5;
+    }
+    #r{
+      position: absolute;
+      top: 250px;
+      left:230px;
+      width: 300px;
+      opacity:0.4;
+    }
+
+    #l{
+      position: absolute;
+      top: 400px;
+      left:530px;
+      width: 400px;
+      opacity:0.4;
+
+    }
+
+    #s{
+      position: absolute;
+      top: 230px;
+      left:1130px;
+      width: 300px;
+      opacity:0.4;
+
+    }
+
+    #al{
+      position: absolute;
+      top: 340px;
+      left:130px;
+      width: 55px;
+      height:55px;
+      z-index: 7;
+    }
+
+
+    #ess{
+      position: absolute;
+      top: 340px;
+      left: 200px;
+      width: 55px;
+      height:55px;
+      z-index: 7;
+    }
+
+    #vit{
+      position: absolute;
+      top: 340px;
+      left:270px;
+      width: 55px;
+      height:55px;
+      z-index: 7;
+    }
+
+    #vod{
+      position: absolute;
+      top: 340px;
+      left:340px;
+      width: 55px;
+      height:55px;
+      z-index: 7;
+    }
+
+    #alone {
+      position: absolute;
+      top: 580px;
+      left:750px;
+      width: 55px;
+      height:55px;
+      z-index: 7;
+    }
+
+    #vodone {
+      position: absolute;
+      top: 580px;
+      left:820px;
+      width: 55px;
+      height:55px;
+      z-index: 7;
+    }
+
+    #essone{
+      position: absolute;
+      top: 580px;
+      left:890px;
+      width: 55px;
+      height:55px;
+      z-index: 7;
+    }
+
+    #altwo{
+      position: absolute;
+      top: 450px;
+      left:1305px;
+      width: 55px;
+      height:55px;
+      z-index: 7;
+    }
+
+    #esstwo{
+      position: absolute;
+      top: 450px;
+      left:1375px;
+      width: 55px;
+      height:55px;
+      z-index: 7;
+    }
+
+    #beetwo{
+      position: absolute;
+      top: 450px;
+      left:1445px;
+      width: 55px;
+      height:55px;
+      z-index: 7;
+    }
+
+    #almond{
+      position: absolute;
+      color: black;
+      left: 300px;
+      top:100px;
+      font-size: 35px;
+      color: white;
+      text-shadow: 0px 0px 7px white;
+      opacity: 0.6;
+      z-index: 6;
+      display: none;
+    }
+
+    #beewax{
+      position: absolute;
+      color: black;
+      left: 520px;
+      top:100px;
+      font-size: 35px;
+      color: white;
+      text-shadow: 0px 0px 7px white;
+      opacity: 0.6;
+      z-index: 6;
+      display: none;
+
+    }
+
+    #essential{
+      position: absolute;
+      color: black;
+      left: 750px;
+      top:100px;
+      font-size: 35px;
+      color: white;
+      text-shadow: 0px 0px 7px white;
+      opacity: 0.6;
+      z-index: 6;
+      display: none;
+
+    }
+
+    #vitamin{
+      position: absolute;
+      color: black;
+      left: 1020px;
+      top:100px;
+      font-size: 35px;
+      color: white;
+      text-shadow: 0px 0px 7px white;
+      opacity: 0.6;
+      z-index: 6;
+      display: none;
+    }
+
+    #vodca{
+      position: absolute;
+      color: black;
+      right: 300px;
+      top:100px;
+      font-size: 35px;
+      color: white;
+      text-shadow: 0px 0px 7px white;
+      opacity: 0.6;
+      z-index: 6;
+      display: none;
+
+    }
+    #arrow{
+      position: absolute;
+      right: 300px;
+      bottom:100px;
+      font-size: 50px;
+      color: white;
+      text-shadow: 0px 0px 7px white;
+      opacity: 0.6;
+      z-index: 7;
+    }
+
+
+
+
+    </style>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+       <script src="finalone.js"></script>
+
+ </head>
+
+ <body>
+     <div class="animated-bg">
+     <div class="rec"></div>
+     <div id=rollerball>Rollerball</div>
+     <div id=liquid>Liquid</div>
+     <div id=solid>Solid</div>
+     <div id=almond>Almond oil</div>
+     <div id=beewax>Beewax</div>
+     <div id=essential>Essential oil</div>
+     <div id=vitamin>Vitamin E oil</div>
+     <div><a id=arrow href="finalroll/finalroll.html">+</a></div>
+     <div id=vodca>Vodka</div>
+     <img id=r src="roller.png">
+     <img id=l src="liquid.png">
+     <img id=s src="solid.png">
+     <img id=al src="almond.png">
+     <img id=ess src="essential.png">
+     <img id=vit src="vitamin.png">
+     <img id=vod src="vodca.png">
+     <img id=alone src="almond.png">
+     <img id=vodone src="vodca.png">
+     <img id=essone src="essential.png">
+     <img id=altwo src="almond.png">
+     <img id=esstwo src="essential.png">
+     <img id=beetwo src="beewax.png">
+     <img id=wave src="wave.png">
+     <img id=circle src="circle.png">
+ </body>
+
+</html>
