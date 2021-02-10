@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.animated-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 150%;
+  width: 100%;
+
+  background: linear-gradient(-45deg, #dd88dd, #9653ac, #42428a, #52527a);
+  background-size: 400% 400%;
+
+  animation: move-bg 8s linear infinite;
+
+}
+
+@keyframes move-bg {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+.rollerball {
+  filter: invert(100%);
+  border-radius: 50%;
+}
+}
+.liquid{
+  filter: invert(100%);
+  border-radius: 50%;
+
+}
+.solid{
+  filter: invert(100%);
+  border-radius: 50%;
+
+}
